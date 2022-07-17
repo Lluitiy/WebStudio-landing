@@ -86,7 +86,7 @@
         fill: $main-white;
         stroke: rgba(0, 0, 0, 0.1);
 
-        display: inline-flex;
+        display: flex;
         padding: 0px;
         align-items: center;
         justify-content: center;
@@ -129,8 +129,7 @@
         top: 50%;
         left: 50%;
         display: block;
-        padding: 0px 40px;
-
+        
         width: 450px;
         height: 609px;
 
@@ -160,6 +159,7 @@
         }
 
         &__header {
+            display: block;
             margin: 0px auto;
             width: 370px;
             min-height: 342px;

@@ -1197,7 +1197,7 @@ footer {
     height: 30px;
     fill: #FFFFFF;
     stroke: rgba(0, 0, 0, 0.1);
-    display: inline-flex;
+    display: flex;
     padding: 0px;
     align-items: center;
     justify-content: center;
@@ -1229,7 +1229,6 @@ footer {
     top: 50%;
     left: 50%;
     display: block;
-    padding: 0px 40px;
     width: 450px;
     height: 609px;
     background-color: #FFFFFF;
@@ -1250,6 +1249,7 @@ footer {
     gap: 12px;
   }
   .modal-form__header {
+    display: block;
     margin: 0px auto;
     width: 370px;
     min-height: 342px;
@@ -1973,7 +1973,7 @@ footer {
     height: 30px;
     fill: #FFFFFF;
     stroke: rgba(0, 0, 0, 0.1);
-    display: inline-flex;
+    display: flex;
     padding: 0px;
     align-items: center;
     justify-content: center;
@@ -2005,7 +2005,6 @@ footer {
     top: 50%;
     left: 50%;
     display: block;
-    padding: 0px 40px;
     width: 450px;
     height: 609px;
     background-color: #FFFFFF;
@@ -2026,9 +2025,10 @@ footer {
     gap: 12px;
   }
   .modal-form__header {
-    margin: 0px auto;
+    margin: 0px;
     width: 370px;
     min-height: 342px;
+    padding: 0px 40px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.7;
@@ -2142,7 +2142,6 @@ footer {
     padding: 10px 55px;
     margin: 0px auto;
     text-align: center;
-    margin: 0px auto;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
