@@ -15,7 +15,13 @@
     justify-content: space-between;
     align-items: baseline;
     margin: 0px auto;
+    &--tablet {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 507px;
 
+    }
     &--position {
         display: flex;
         flex-direction: column;
