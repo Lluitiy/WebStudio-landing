@@ -18,7 +18,9 @@
         padding-bottom: 60px;
 
         &__list {
-            display: block;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
         }
 
         &__name {
@@ -34,17 +36,23 @@
         }
 
         &__about {
+            font-weight: 400;
             font-size: 14px;
             line-height: 1.71;
             letter-spacing: 0.03em;
             color: $description-color;
         }
 
+        &__item {
+            display: block;
+            width: 354px;
+        }
         &__item::before {
             display: block;
             content: "";
+            width: 354px;
             height: 120px;
-            padding: 25px 190px;
+            padding: 25px 144px;
             background-size: 70px 70px;
             background-repeat: no-repeat;
             background-position: center;
