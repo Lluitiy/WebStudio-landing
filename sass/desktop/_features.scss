@@ -20,6 +20,7 @@
         display: flex;
         gap: 30px;
     }
+
     &__name {
         width: 270px;
         margin-bottom: 10px;
@@ -29,12 +30,14 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
     }
+
     &__about {
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: $description-color;
     }
+
     &__item::before {
         display: block;
         content: "";

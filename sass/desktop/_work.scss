@@ -1,11 +1,19 @@
 .work {
-    text-align: center;
-    margin: 0px;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+    padding: 94px 15px;
+
+    &--container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    &__title {
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+    }
 
     &__list {
         display: flex;
