@@ -1,4 +1,4 @@
-@media screen and (max-width:767px) {
+@media screen and (min-width:768px) {
     .hero {
         padding: 118px 0px;
 
@@ -141,7 +141,7 @@
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
 
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
 
         z-index: 2;
 

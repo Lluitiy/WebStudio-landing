@@ -1,19 +1,5 @@
 @import "./utils/variables";
 @import "./base/general" ;
-@import "./desktop/header";
-@import "./desktop/hero.scss";
-@import "./desktop/features";
-@import "./desktop/work";
-@import "./desktop/team";
-@import "./desktop/socials";
-@import "./desktop/customers";
-@import "./desktop/footer";
-@import "./desktop/project";
-@import "./mobile/header";
-@import "./mobile/hero";
-@import "./mobile/feature";
-@import "./mobile/work";
-@import "./mobile/team";
-@import "./mobile/socials";
-@import "./mobile/customers";
-@import "./mobile/footer"
+@import "./desktop/index";
+@import "./mobile/index";
+@import "./tablet/index"

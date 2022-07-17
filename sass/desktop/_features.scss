@@ -1,3 +1,4 @@
+@media screen and (min-width:1200px) {
 .no-see {
     color: transparent;
     position: absolute;
@@ -66,5 +67,5 @@
     &__icon--astronaut::before {
         background-image: url(../img/icons/astronaut.svg);
     }
+    }
 }
-

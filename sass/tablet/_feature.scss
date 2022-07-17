@@ -1,5 +1,5 @@
-@media screen and (max-width:767px) {
-    .no-see {
+@media screen and (min-width:768px) {
+    .no-see{
         color: transparent;
         position: absolute;
         width: 1px;
@@ -11,9 +11,8 @@
         white-space: nowrap;
         clip-path: inset(100%);
         clip: rect(0 0 0 0);
-        overflow: hidden;
+        overflow: hidden;  
     }
-
     .feature {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -70,4 +69,5 @@
             background-image: url(../img/icons/astronaut.svg);
         }
     }
+  
 }
