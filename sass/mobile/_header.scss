@@ -52,10 +52,16 @@
     &__burger--button:hover {
         color: $brand-color;
     }
+
     &__burger--icon {
         display: flex;
-        color: currentColor;
+        fill: currentColor;
     }
+
+    // &__burger--icon:focus,
+    // &__burger--icon:hover {
+    //     color: $brand-color;
+    // }
     &__burger--open {
     display: block;
      width: 40px;
@@ -88,7 +94,7 @@
     left: 0;
     overflow: hidden;
     width: 100%;
-    height: 796px;
+    height: 100%;
     padding: 48px 40px;
     text-align: center;
     background: $main-white;
@@ -97,63 +103,61 @@
    
     &.is-open {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     }
 
     &__nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        gap: 32px;
-
-        margin-bottom: 200px;
-
+        display: block;
+        margin-bottom: auto;
     }
 
     &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+    &__link {
         display: block;
-
+        text-align: start;
         font-weight: 500;
         font-size: 40px;
         line-height: 1.2;
         letter-spacing: 0.02em;
 
         color: $primary-color;
+
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $brand-color;
     }
 
     &__contacts {
         display: flex;
         flex-direction: column;
-        gap: 32px;
-        margin-bottom: 64px;
-    }
-
-    &__reference {
-        display: block;
-
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 47px;
-        text-align: center;
-        letter-spacing: 0.02em;
-
-        color: $primary-color;
+        justify-content: baseline;
     }
 
     &__socials {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        gap: 10px;
     }
 
     &__socials--icons {
-        
-    }
+        display: block;
+        padding-right: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.2;
+    
+        letter-spacing: 0.02em;
+        color: $brand-color;
 
-    &__socials--icons::after {
-        content: '';
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
     }
 }
 
@@ -269,4 +273,8 @@
        stroke: currentColor;
    }
 }
+}
+
+.current {
+    color: $brand-color
 }

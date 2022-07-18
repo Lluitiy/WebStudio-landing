@@ -27,6 +27,141 @@
         &__burger--open {
             display: none;
         }   
+        &__burger--button {
+            position: fixed;
+            top: 0;
+            right: 0;
+    
+            transform: translate(-50%, 23%);
+    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+            padding: 0px;
+            width: 40px;
+            height: 40px;
+            color: $primary-color;
+            border: transparent;
+            background-color: transparent;
+    
+            z-index: 6;
+    
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        &__burger--button:focus,
+        &__burger--button:hover {
+            color: $brand-color;
+        }
+    
+        &__burger--icon {
+            display: flex;
+            fill: currentColor;
+        }
+    
+        // &__burger--icon:focus,
+        // &__burger--icon:hover {
+        //     color: $brand-color;
+        // }
+        &__burger--open {
+            display: block;
+            width: 40px;
+            height: 40px;
+    
+    
+        }
+    
+        &__burger--button.is-open &__burger--open {
+            display: none;
+        }
+    
+        &__burger--close {
+            display: none;
+            width: 40px;
+            height: 40px;
+        }
+    
+        &__burger--button.is-open &__burger--close {
+            display: block;
+        }
+    
+        }
+    
+        .burger {
+
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            padding: 48px 40px;
+            text-align: center;
+            background: $main-white;
+
+            z-index: 3;
+
+        &.is-open {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__nav {
+            display: block;
+            margin-bottom: auto;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 32px;
+        }
+
+        &__link {
+            display: block;
+            text-align: start;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+
+            color: $primary-color;
+
+            transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__link:hover,
+        &__link:focus {
+            color: $brand-color;
+        }
+
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            justify-content: baseline;
+        }
+
+        &__socials {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__socials--icons {
+            display: block;
+            padding-right: 10px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.2;
+
+            letter-spacing: 0.02em;
+            color: $brand-color;
+
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+        }
     }
 
     .nav {
