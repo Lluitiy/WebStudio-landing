@@ -1220,6 +1220,9 @@ footer {
   .burger__link:hover, .burger__link:focus {
     color: #2196f3;
   }
+  .burger__link--current {
+    color: #2196f3;
+  }
   .burger__contacts {
     display: flex;
     flex-direction: column;

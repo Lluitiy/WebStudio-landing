@@ -130,11 +130,17 @@
         transition: color 250ms linear;
     }
 
+    
+
     &__link:hover,
     &__link:focus {
         color: $brand-color;
     }
 
+    &__link--current {
+        color: $brand-color
+    }
+    
     &__contacts {
         display: flex;
         flex-direction: column;
