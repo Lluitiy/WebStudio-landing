@@ -15,11 +15,67 @@
 }
 
 .head {
-    display: block;
+    display: flex;
     align-items: center;
-    justify-content: center;
-    align-items: baseline;
+    justify-content: space-between;
+    // align-items: baseline;
     background-color: $main-white;
+
+    &__burger--position {
+        position: relative;
+    }
+
+    &__burger--button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        width: 40px;
+        height: 40px;
+        color: $primary-color;
+        border: transparent;
+        background-color: transparent;
+    }
+    &__burger--icon {
+        display: flex;
+        color: currentColor;
+    }
+    &__burger--open {
+    display: block;
+     width: 24px;
+     height: 16px;
+    }
+
+    &__burger--button.is-open &__burger--open {
+        display: none;
+    }
+
+    &__burger--close {
+        display: none;
+        width: 19px;
+        height: 19px;
+    }
+
+    &__burger--button.is-open &__burger--close {
+        display: block;
+    }
+    
+    &__burger-menu--container {
+        display: none;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        height: 796px;
+        padding: 20px;
+        text-align: center;
+        background: greenyellow;
+    }
+    
+    &__burger-menu--container.is-open {
+        display: block;
+    }
 }
 
 .nav {

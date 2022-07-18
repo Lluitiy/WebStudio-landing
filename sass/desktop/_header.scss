@@ -21,6 +21,14 @@
         justify-content: center;
         align-items: baseline;
         background-color: $main-white;
+
+            &__burger--position {
+                display: none;
+            }
+            
+            &__burger--open {
+                display: none;
+            }
     }
 
     .nav {

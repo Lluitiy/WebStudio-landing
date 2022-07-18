@@ -19,6 +19,14 @@
         align-items: center;
         justify-content: space-between;
         background-color: $main-white;
+
+        &__burger--position {
+                display: none;
+            }
+        
+        &__burger--open {
+            display: none;
+        }   
     }
 
     .nav {

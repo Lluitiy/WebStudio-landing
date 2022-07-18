@@ -21,6 +21,31 @@
 <header>
    <div class="container head">
       <a href="index.html" class="logo--accent">Web<span class="logo">Studio</span></a>
+      <div class="head__burger--position">
+         <button type="button"
+                 class="head__burger--button is-open" 
+                 aria-expanded="false"
+                 aria-controls="head__burger-menu--container"
+                 data-menu-button
+                 >
+            <svg 
+            class="head__burger--icon"
+            width="24px"
+            height="16px"
+            aria-label="mobile menu switcher"
+            >
+               <use href="./img/icons/sprite.svg#burger_open" class="head__burger--open"></use>
+               <use href="./img/icons/sprite.svg#burger_close" class="head__burger--close"></use>
+            </svg>
+         </button>
+      </div>
+      <div 
+            class="head__burger-menu--container is-open" 
+            id="head__burger-menu--container"
+            data-menu
+            >
+            burger
+      </div>
       <nav>
          <ul class="nav">
             <li><a href="index.html" class="nav__item nav__item--current">Студия</a></li>
@@ -43,6 +68,7 @@
                +38 096 111 11 11</a></li>
       </ul>
    </div>
+   
 </header>
 
 <main>
@@ -503,7 +529,7 @@
                </div>
 </div>
 </footer>
-
+   <script src="./js/mobile-menu.js"></script>
    <script src="./js/modal.js"></script>
 </body>
 </html>
