@@ -1604,7 +1604,9 @@ footer {
     padding-bottom: 60px;
   }
   .feature__list {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   .feature__name {
     margin: 0px auto;
@@ -1737,15 +1739,14 @@ footer {
     letter-spacing: 0.03em;
   }
   .team__list {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   .team__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
-  }
-  .team__item:not(last-chlild) {
-    margin-bottom: 30px;
   }
   .team__foto {
     width: 450px;
@@ -2618,13 +2619,13 @@ footer {
     gap: 30px;
   }
   .feature__name {
-    margin: 0px auto;
+    margin-left: 0px;
     width: 270px;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-align: center;
+    text-align: start;
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
@@ -2761,9 +2762,6 @@ footer {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background: #FFFFFF;
-  }
-  .team__item:not(last-chlild) {
-    margin-bottom: 30px;
   }
   .team__foto {
     width: 354px;
